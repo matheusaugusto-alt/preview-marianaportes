@@ -52,7 +52,6 @@ const IdealFor: React.FC = () => {
         <div className="text-center mt-12">
             <a href="#" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg shadow-blue-500/30">
                 QUERO UMA EQUIPE EFICIENTE AGORA
-                <ArrowRightIcon className="w-6 h-6 ml-3" />
             </a>
         </div>
       </div>

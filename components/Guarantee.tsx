@@ -22,7 +22,6 @@ const Guarantee: React.FC = () => {
                     </p>
                     <a href="#" className="inline-flex items-center justify-center px-8 py-4 mt-8 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg shadow-purple-500/30">
                         QUERO APROVEITAR ESSA OFERTA
-                        <ArrowRightIcon className="w-6 h-6 ml-3" />
                     </a>
                 </div>
             </div>

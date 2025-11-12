@@ -1,12 +1,5 @@
 import React from 'react';
-import { CheckCircleIcon, XCircleIcon, ArrowRightIcon } from './icons';
-
-const CtaButton: React.FC<{ text: string }> = ({ text }) => (
-    <a href="#" className="inline-flex items-center justify-center px-8 py-4 mt-12 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg shadow-blue-500/30">
-      {text}
-      <ArrowRightIcon className="w-6 h-6 ml-3" />
-    </a>
-);
+import { CheckCircleIcon, XCircleIcon } from './icons';
 
 const ProblemSolution: React.FC = () => {
     const withoutFormation = [
@@ -60,7 +53,6 @@ const ProblemSolution: React.FC = () => {
           </ul>
         </div>
       </div>
-      <CtaButton text="QUERO ACESSAR A FORMAÇÃO AGORA" />
     </section>
   );
 };

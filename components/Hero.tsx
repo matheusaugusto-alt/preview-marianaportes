@@ -1,16 +1,14 @@
 import React from 'react';
-import { ArrowRightIcon } from './icons';
 
 const CtaButton: React.FC<{ text: string }> = ({ text }) => (
-  <a href="#" className="inline-flex items-center justify-center px-8 py-4 mt-8 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg shadow-blue-500/30 transform hover:-translate-y-1">
+  <a href="#" className="inline-flex items-center justify-center px-8 py-4 mt-8 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg shadow-blue-500/30 transform hover:-translate-y-1 text-center">
     {text}
-    <ArrowRightIcon className="w-6 h-6 ml-3" />
   </a>
 );
 
 const Hero: React.FC = () => {
   return (
-    <header className="py-20 px-4 sm:px-6 lg:px-8 bg-black relative overflow-hidden">
+    <header className="pt-10 pb-20 md:py-20 px-6 lg:px-8 bg-black relative overflow-hidden">
       {/* Grain overlay */}
       <div 
         className="absolute inset-0 z-0 opacity-[0.02] pointer-events-none"
@@ -19,27 +17,42 @@ const Hero: React.FC = () => {
         }}
       ></div>
       
-      {/* Text readability overlay */}
-      <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(0,0,0,.85)_0%,rgba(0,0,0,0)_45%)]"></div>
+      {/* Text readability overlay (desktop only) */}
+      <div className="absolute inset-0 z-10 hidden md:block bg-[linear-gradient(90deg,rgba(0,0,0,.85)_0%,rgba(0,0,0,0)_45%)]"></div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-20">
-        <div className="text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-100">
-            Monte equipes mais eficientes e evite prejuízos com <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">contratações equivocadas</span>
-          </h1>
-          <p className="mt-6 text-lg text-slate-400 max-w-xl mx-auto md:mx-0">
-            Descubra um método simples, direto e prático para conduzir entrevistas estruturadas, revelar fit comportamental e tomar decisões assertivas — mesmo que você nunca tenha usado um processo formal antes.
-          </p>
-          <CtaButton text="QUERO UMA EQUIPE EFICIENTE AGORA" />
-        </div>
-        <div className="relative flex justify-center items-center h-[500px] md:h-auto md:self-stretch">
+      {/* Mobile "Logo" - Shown only on mobile, at the top */}
+      <div className="md:hidden text-center mb-8">
+        <img 
+          src="https://i.imgur.com/ImkZY8i.png" 
+          alt="Formação de Condutores de Entrevista" 
+          className="inline-block h-auto w-full max-w-sm"
+        />
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 md:max-w-6xl md:mx-auto gap-8 md:gap-12 items-center relative z-20">
+        
+        {/* Image section: For desktop only */}
+        <div className="hidden md:relative md:flex justify-center items-center md:h-auto md:self-stretch order-2">
           {/* Subtle halo effect */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_45%,rgba(173,216,230,0.06)_0%,transparent_70%)] z-10"></div>
+          
+          {/* Desktop Image */}
           <img 
             src="https://i.imgur.com/SsNHQd1.png" 
             alt="Mariana Portes Gelais" 
             className="relative z-20 w-auto h-full max-w-none md:max-w-full object-contain [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]"
           />
+        </div>
+
+        {/* Text section: Order 1 on both, but image is outside grid on mobile */}
+        <div className="text-left order-1">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-100">
+            Monte equipes mais eficientes e evite prejuízos com <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">contratações equivocadas</span>
+          </h1>
+          <p className="mt-6 text-lg text-slate-400 md:max-w-xl">
+            Descubra um método simples e prático para conduzir entrevistas estruturadas, revelar fit comportamental e tomar decisões assertivas — <strong className="font-semibold text-slate-300">mesmo que você nunca tenha usado um processo formal antes.</strong>
+          </p>
+          <CtaButton text="QUERO UMA EQUIPE EFICIENTE AGORA" />
         </div>
       </div>
     </header>

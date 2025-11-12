@@ -3,7 +3,7 @@ import { CheckCircleIcon } from './icons';
 
 const WhatYouGet: React.FC = () => {
     const items = [
-        "+250 perguntas estratégicas prontas para entrevistas (por competência e situação).",
+        "+250 perguntas estratégicas prontas para entrevistas (divididas por competência e situação).",
         "+25 competências comportamentais com indicadores observáveis na fala do candidato.",
         "Planilha de ranqueamento para comparar candidatos de forma objetiva (peso por competência, notas e observações).",
         "Tudo pronto para copiar e aplicar — ideal para quem precisa de clareza e segurança já na próxima entrevista.",

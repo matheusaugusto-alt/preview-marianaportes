@@ -16,8 +16,8 @@ const App: React.FC = () => {
     <div className="bg-slate-900 text-slate-300 font-sans overflow-x-hidden">
       <Hero />
       <Ticker />
-      <ProblemSolution />
       <ProductPreview />
+      <ProblemSolution />
       <Testimonials />
       <WhatYouGet />
       <Bonuses />

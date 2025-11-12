@@ -41,7 +41,6 @@ const Pricing: React.FC = () => {
 
                     <a href="#" className="w-full inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-full hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg shadow-blue-500/30">
                         QUERO APROVEITAR ESSA OFERTA
-                        <ArrowRightIcon className="w-6 h-6 ml-3" />
                     </a>
                     <p className="mt-4 text-sm text-slate-500">Compra 100% segura</p>
                 </div>
