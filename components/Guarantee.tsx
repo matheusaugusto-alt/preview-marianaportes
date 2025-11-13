@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRightIcon } from './icons';
 
 const Guarantee: React.FC = () => {
     return (

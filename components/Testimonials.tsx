@@ -1,8 +1,7 @@
 
 import React from 'react';
-import { ArrowRightIcon } from './icons';
 
-const IdealFor: React.FC = () => {
+const Testimonials: React.FC = () => {
   const items = [
       {
           title: "Lidera e precisa contratar com segurança",
@@ -59,4 +58,4 @@ const IdealFor: React.FC = () => {
   );
 };
 
-export default IdealFor;
+export default Testimonials;

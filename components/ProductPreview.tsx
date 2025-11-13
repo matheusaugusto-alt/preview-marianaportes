@@ -13,9 +13,10 @@ const ProductPreview: React.FC = () => {
               className="w-full h-full"
               src="https://www.youtube.com/embed/hL-vP3LF_mo"
               title="Formação de Condutores de Entrevista"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
+              loading="lazy"
+              style={{ border: 0 }}
             ></iframe>
           </div>
         </div>

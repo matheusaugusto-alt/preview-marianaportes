@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircleIcon, NotebookIcon, ArrowRightIcon } from './icons';
+import { CheckCircleIcon, NotebookIcon } from './icons';
 
 const Pricing: React.FC = () => {
     const features = [
