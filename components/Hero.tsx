@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           
           {/* Desktop Image */}
           <img 
-            src="https://i.imgur.com/SsNHQd1.png" 
+            src="https://i.imgur.com/EuQRra1.png" 
             alt="Mariana Portes Gelais" 
             className="relative z-20 w-auto h-full max-w-none md:max-w-full object-contain [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]"
           />

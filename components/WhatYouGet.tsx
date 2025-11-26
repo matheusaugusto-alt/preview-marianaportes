@@ -20,7 +20,7 @@ const WhatYouGet: React.FC = () => {
         <div className="mt-12 p-8 bg-slate-900/80 backdrop-blur-sm rounded-2xl shadow-xl border border-purple-900/50">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div>
-                    <img src="https://i.imgur.com/aLt0c7c.png" alt="Materiais do Curso" className="w-full h-auto" />
+                    <img src="https://i.imgur.com/9o2DGpo.png" alt="Materiais do Curso" className="w-full h-auto" />
                 </div>
                 <ul className="space-y-6 text-left text-lg">
                     {items.map((item, index) => (

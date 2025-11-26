@@ -11,7 +11,7 @@ const About: React.FC = () => {
                         <span className="text-sm font-bold uppercase tracking-wider">Criadora do Método</span>
                     </div>
                     <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-100">
-                        Prazer, Mariana Portes Gelais
+                        Prazer, Maria Fernanda
                     </h2>
                     <div className="mt-6 space-y-4 text-lg text-slate-400">
                         <p>
@@ -27,8 +27,8 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex justify-center">
                     <img
-                        src="https://i.imgur.com/XkXvCnN.png"
-                        alt="Mariana Portes Gelais"
+                        src="https://i.imgur.com/oLBrN4W.png"
+                        alt="Maria Fernanda"
                         className="w-80 rounded-3xl shadow-2xl shadow-blue-500/20 border-4 border-slate-800"
                     />
                 </div>
