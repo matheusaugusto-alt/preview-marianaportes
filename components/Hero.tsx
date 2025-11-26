@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const CtaButton: React.FC<{ text: string }> = ({ text }) => (
@@ -20,12 +21,13 @@ const Hero: React.FC = () => {
       {/* Text readability overlay (desktop only) */}
       <div className="absolute inset-0 z-10 hidden md:block bg-[linear-gradient(90deg,rgba(0,0,0,.85)_0%,rgba(0,0,0,0)_45%)]"></div>
 
-      {/* Mobile "Logo" - Shown only on mobile, at the top */}
-      <div className="md:hidden text-center mb-8">
+      {/* Mobile Image - Updated to match desktop cover */}
+      <div className="md:hidden text-center mb-8 relative z-20">
+         <div className="absolute inset-0 bg-blue-500/10 blur-3xl -z-10 rounded-full"></div>
         <img 
-          src="https://i.imgur.com/ImkZY8i.png" 
-          alt="Formação de Condutores de Entrevista" 
-          className="inline-block h-auto w-full max-w-sm"
+          src="https://i.imgur.com/EuQRra1.png" 
+          alt="Mariana Portes Gelais" 
+          className="inline-block h-auto w-full max-w-sm object-contain"
         />
       </div>
 
